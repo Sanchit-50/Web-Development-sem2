@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Surfers Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #05bbed, #0aa6da);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 40px;
+             background: rgba(255, 255, 255, 0.1);
+             margin: 20px;
+             border-radius: 15px;
+        }
+
+        .characters, .obstacles {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 15px;
+            width: 200px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.08);
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        footer {
+            padding: 15px;
+            background: rgba(5, 5, 5, 0.974);
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+       <h1>Subway Surfers</h1>
+     <img src="https://media.pocketgamer.biz/images/128821/84616/subway-surfers-key-art-landscape_orig.webp" width="400px" height="600px" alt="Subway Surfers Image">
+
+       
+         <p>This is a simple clone of the popular mobile game Subway Surfers. The game features a character running through a subway system, dodging obstacles and collecting coins.</p>
+        <p>Use the arrow keys to move the character left and right, and the spacebar to jump over obstacles. Collect coins to increase your score!</p> 
+    </header>
+
+    <!-- Characters Section -->
+    <div class="section">
+        <h2>🏃 Characters</h2>
+
+        <div class="characters">
+
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/3d/a1/c2/3da1c21b252127260ab9e5938e4321c5.jpg" alt="Character 1">
+                <h3>Tricky</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://blast-block.github.io/images/games/Lucy1.png" alt="Character 2">
+                <h3>Skater Girl</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/6c/22/82/6c2282c26a8d538ba04e8ef0b5ca7ddb.jpg" alt="Character 3">
+                <h3>Yutani</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://static.tvtropes.org/pmwiki/pub/images/f7d002cb_31ae_4435_86e3_ffc470b90816.png" alt="Character 4">
+                <h3>Jake</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/27/2f/73/272f7312decee184a82ad1721951f0e7.jpg" alt="Character 6">
+                <h3>Sofia</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Obstacles Section -->
+    <div class="section">
+        <h2>🚧 Obstacles</h2>
+
+        <div class="obstacles">
+
+            <div class="card">
+                <img src="https://media.sketchfab.com/models/baed87144cab479d91f851eadf678c96/thumbnails/7905fb7ef3e94103b0c92b2c45c4a87c/989a3e468c18406589f5181210940e39.jpeg" alt="Train Obstacle">
+                <h3>Train</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/wGVqDd3x95g/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHKAoAC0AWKAgwIABABGGUgTChFMA8=&rs=AOn4CLDFJak_Mwqy153Jk_-B2UWERywY9w" alt="Barrier Obstacle">
+                <h3>Barrier</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/dPTQ0F8qxsAyJgtktFfJg19qP4lomw_tNL_qBdUei2zjr2sVFvBRzljqLv5E_ZQJK1hT5XfGmIc2EtxWBP7PZtDuDA=s1280-w1280-h800" alt="Barrier Obstacle">
+                <h3>Barrier</h3>
+            </div>
+
+            <div class="card">
+                <img src ="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBhUIBwgWFhUXFiEYFxgYFyEaGBkWGBoYIhsgGh8ZHigsIiIlHh8XJTEhJSorLjoyFyA/OjMtNygtLisBCgoKDg0OGhAQGi8lICIzNy8rNzcrLystLSwrLy0tNzUuOCswNS03OC4uKzAtLy0tLS0tLS0tLS0tLS0tLS0rLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABQYHBAIDAQj/xAA9EAACAQMBBAcECAMJAAAAAAAAAQIDBBEFBhIhMQcTQVFxgZEiYaGxFBVCYnKSwdEygqIWIyUzNFJTc+H/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBQT/xAAmEQEBAAICAAMJAQAAAAAAAAAAAQIRAxIEMUEUISIyUWFxsfAT/9oADAMBAAIRAxEAPwDUwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOHWNWs9GtPpN/Vws4SSy5PuSO4r+3dpbXmy9WF1PdwlKMsZ3Zp+z5Pk/dJlc7rG1Mm7qIWt0j2/W7ttYtrvlPD9En8yY0rbDTr+apTThJ9/GOfFfqjINMvbGMfbhnhwbhv5fjyx4Fq2BpWWp7Qqonu9Wt5w7JS+y0nxSXF/yo83bkl99/Sel+jVwAetUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+qEnyi/Q/eqqf8b9CNweSP190FotaV1Q6yKptuHbLC4Je9vB+anqj064VOpY1Zxa/ipwc8S44Uox4rPfy+Ga9r2tXd1ZTULKdOEZLO/FqUsJS5NLC/Yw5PEYSWS7q2PzRkn1ZtFdV9+emVcy7mkl7ufA0Xott9RtLiVtqumzilFulUk08Za3o5i+3ms9zPFprGmXFSLrQi3/AOFp0PUKF9fws7BLh7UsdkeJzp4vKZSXCajpcnFJx3LtViBEVtcdGq6MtMuHJScY7tKUoyw2uEsY4+JLUVUqUVUdJrKTxzxnsyu46mHNx5+Vct+g9dXNfYfoeWmuaNdgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcOrXNzaWyq2trKp7SUlHmovm8c35HcCuePbGza2N1doOrV1q5t3K1surfFJVKiy+Dw1u72OOHxwZ7e7R6tpVz1eq0a1N5x7bai392XJ+TZrx4q06dam6daClF801lPxTPP7JhrW7fzdpzz7Xemb2W2893jcS/M/3JJbVKUN7r8+Z2ar0d7PahmVG3lQl30Zbq/I8x+BS9e2B1nRreV3Z6hCrSisve9iaXhxT9V4Hnz8DPRTTR9lr1V7R3MvtSb8lw/T4ndCdvV1KdleRTp3EfZb7KkVhx8XHDi/uy9xUtFuKtOyhQs7epJJJZjBvl70jpuLuldUnRuY8ny5NST9U0zm4y4Z717lYzfazQqugaxK3ncbqdVqP/W+O8l59/YzT+jXTKehaLV1Csm3KWIt/xTSwljxfIrG2Nk9ddv8ASam9KM1DfziTpS5xk+18OEufPmWqNxFuDrS4QWIRXCEEl2LtfvZ6+TmnTH6/2muXLbNLVZJ07ZQqyTlxcscsybbx7uJULvW/q/UalrKeMSbXhLj+vwJGlqFaac6FGckuDcYuST8kU7a7S9R1zWaa0eMVOUWp9Y91R3cNZ4ZziT4JPkePg4rnn1vqy80ndbYOisRuX5NkJebb1U/9VL8z/c79M6MINqpreqzm/wDZSW5Hwcnlvy3S4aTs7o+jL/DtPhB8t7G9N+M5Zk/U6uHgJ6raV7Z292iv6MqsbeajjCdVuOXlPMd5N4xlZxjj6TVvqmo/SI29fR6iblhveUlu9st5Nrh3Np+fAmwb+yya1lZr7tMOTrLNSgAPSzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACm9KV47bQIUov+Osk/wxUpfNRLkUjpatK9fZ2FxRhlUqqlPvUHGUc+Tcclc/lopOl7R6ja0oxttQajHLUezMk85XbjLxk67a+qNZnPL7X3sqNJU5Sz8uBKUbjBz+TjidLDVu5SlDj9tP5nXUv5Y5lYlc70o8eUs/M6Xd5XFmN4vI0l6WvahaxlStL1wUsN9+YvOU15J96PWna5XuNo4XVxc78nVhvPlwk91rh2bpWrndq8ZfM7dmbadzrlG2tYZfWRk8dkISTk35J/A34+Obg20AHRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4r0qdxRlRrwUoyTjJPk01hp+R7AH857TWC0PaGtYW7k4QliLfF7rSaz5PmfCle8MMtvSzZ/Rdp/pG7wq04y/mj7L+Cj6kRs5sTqG01hK+sHCKjPc9uTjvNJNtYi+HFLxyeezd1ptcJqXaPjc5kvE+7uPeSNbo32ooTxStFL3xqxx/U0dlv0XbQV3/AH9SlD8VRt/0xZH+anX7q3XvVFYT49y5mq9FWk0qGjfWtRPrauVx+zCMnwXi1l+C7jJo28rO+naVYbsqc5Ql4xbTx6G/bM2bsNn6NtKOGoJtfel7T+LZbjnxaWzwkx2kwAbsgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGd9NGm1LjQqepUlnqZ4l+CrhZ/MoepK9E9KpS2Go9bHG9Kcl+F1JYPn0rXapbNqzc8ddVjF/hj7b+MY+p9+i9v8AsfTp7+d2c0n7t9v9SPVbfwrYACVWI6rptxf9K9TTur/zK8ZN91PcjJvh91M24yT6xVr0pTunNcblU2vuuKp/s/I1siRbK70AAlUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFbQ7PadtFaq31Om2ovei4ycZRljGVj3djTR99G0q00XTo2FhBqEW2stt5k222372dwAAACuVtidEr679c1aM3UclNrfe45rGHheC4Zx3osYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/2Q==">
+                <h3>Policeman</h3>
+        </div>
+
+         <div class="Powerups">
+             <div style ="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 10px;">
+              <h3>Power-Ups</h3>
+             <div>
+            <img src="https://subwaysurferapkhub.com/wp-content/uploads/2025/02/subway-surfers-power-ups-2.webp" width="500px" height="400px">
+          </div>
+       
+       </div>
+
+    <!-- Footer -->
+       <button style ="background-color: #4CAF50; color: white; padding: 15px 32px; font-size: 16px; border: none; cursor: pointer; text-align: center; display: block; margin: 0 auto;">
+  Tap to Start the Game
+ </button>
+    <footer>
+        <p>© 2026 Subway Surfers Fan Website | Made with HTML ❤️</p>
+    </footer>
+
+</body>
+</html>
